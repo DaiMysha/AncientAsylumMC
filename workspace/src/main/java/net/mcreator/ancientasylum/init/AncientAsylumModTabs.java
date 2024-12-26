@@ -5,12 +5,15 @@
 package net.mcreator.ancientasylum.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.ancientasylum.AncientAsylumMod;
@@ -18,6 +21,10 @@ import net.mcreator.ancientasylum.AncientAsylumMod;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class AncientAsylumModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AncientAsylumMod.MODID);
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ANCIENT_ASYLUM_ITEMS = REGISTRY.register("ancient_asylum_items",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ancient_asylum.ancient_asylum_items")).icon(() -> new ItemStack(AncientAsylumModItems.RUBBER.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(AncientAsylumModItems.RUBBER.get());
+			}).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {

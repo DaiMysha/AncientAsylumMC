@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import net.minecraft.world.item.Item;
 
+import net.mcreator.ancientasylum.item.RubberItem;
 import net.mcreator.ancientasylum.AncientAsylumMod;
 
 public class AncientAsylumModItems {
