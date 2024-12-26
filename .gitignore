@@ -24,3 +24,10 @@ hs_err_pid*
 replay_pid*
 workspace/.mcreator/workspaceBackups/ancient_asylum.mcreator-backup_20241226_192856
 /workspace/.mcreator/workspaceBackups
+/workspace/run
+/workspace/.gradle
+/workspace/.gradle
+/workspace/.gradle/8.11.1
+/workspace/build/moddev
+/workspace/.eclipse/configurations
+/workspace/run
