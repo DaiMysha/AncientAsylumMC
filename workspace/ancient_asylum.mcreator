@@ -8,9 +8,19 @@
       "registry_name": "rubber",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ancient_asylum/models/item/rubber.json",
-          "src/main/java/net/mcreator/ancientasylum/item/RubberItem.java"
+          "src/main/java/net/mcreator/ancientasylum/item/RubberItem.java",
+          "src/main/resources/assets/ancient_asylum/models/item/rubber.json"
         ]
+      }
+    },
+    {
+      "name": "AncientAsylumItems",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_asylum_items",
+      "metadata": {
+        "files": []
       }
     }
   ],
@@ -20,6 +30,7 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "item_group.ancient_asylum.ancient_asylum_items": "Ancient Asylum Items",
       "item.ancient_asylum.rubber": "Rubber"
     }
   },
