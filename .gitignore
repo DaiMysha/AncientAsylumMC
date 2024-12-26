@@ -31,3 +31,6 @@ workspace/.mcreator/workspaceBackups/ancient_asylum.mcreator-backup_20241226_192
 /workspace/build/moddev
 /workspace/.eclipse/configurations
 /workspace/run
+/workspace/.eclipse/configurations
+/workspace/build/reports/configuration-cache
+/workspace/build
