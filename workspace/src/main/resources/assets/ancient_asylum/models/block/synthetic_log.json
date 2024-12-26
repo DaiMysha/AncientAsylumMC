@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ancient_asylum:block/synthetic_log_top",
+    "up": "ancient_asylum:block/synthetic_log_top",
+    "north": "ancient_asylum:block/synthetic_log_side",
+    "east": "ancient_asylum:block/synthetic_log_side",
+    "south": "ancient_asylum:block/synthetic_log_side",
+    "west": "ancient_asylum:block/synthetic_log_side",
+    "particle": "ancient_asylum:block/synthetic_log_top"
+  },
+  "render_type": "solid"
+}

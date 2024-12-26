@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ancient_asylum:block/rubber_block",
+    "particle": "ancient_asylum:block/rubber_block"
+  },
+  "render_type": "solid"
+}

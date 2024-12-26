@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "ancient_asylum:synthetic_log"
+    }
+  ],
+  "result": {
+    "id": "ancient_asylum:synthetic_plank",
+    "count": 4
+  }
+}

@@ -24,12 +24,19 @@ public class AncientAsylumModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ANCIENT_ASYLUM_ITEMS = REGISTRY.register("ancient_asylum_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ancient_asylum.ancient_asylum_items")).icon(() -> new ItemStack(AncientAsylumModItems.RUBBER.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(AncientAsylumModItems.RUBBER.get());
+				tabData.accept(AncientAsylumModBlocks.RUBBER_BLOCK.get().asItem());
+				tabData.accept(AncientAsylumModBlocks.SYNTHETIC_LOG.get().asItem());
+				tabData.accept(AncientAsylumModBlocks.SYNTHETIC_PLANK.get().asItem());
 			}).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(AncientAsylumModItems.RUBBER.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(AncientAsylumModBlocks.RUBBER_BLOCK.get().asItem());
+			tabData.accept(AncientAsylumModBlocks.SYNTHETIC_LOG.get().asItem());
+			tabData.accept(AncientAsylumModBlocks.SYNTHETIC_PLANK.get().asItem());
 		}
 	}
 }

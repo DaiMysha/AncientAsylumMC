@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ancient_asylum:rubber_block"
+    }
+  ],
+  "result": {
+    "id": "ancient_asylum:rubber",
+    "count": 4
+  }
+}

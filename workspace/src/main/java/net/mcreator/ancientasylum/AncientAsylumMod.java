@@ -20,6 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.ancientasylum.init.AncientAsylumModTabs;
 import net.mcreator.ancientasylum.init.AncientAsylumModItems;
+import net.mcreator.ancientasylum.init.AncientAsylumModBlocks;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -38,6 +39,8 @@ public class AncientAsylumMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+
+		AncientAsylumModBlocks.REGISTRY.register(modEventBus);
 
 		AncientAsylumModItems.REGISTRY.register(modEventBus);
 

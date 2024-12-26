@@ -22,21 +22,137 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "RubberBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rubber_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ancient_asylum/models/item/rubber_block.json",
+          "src/main/resources/assets/ancient_asylum/blockstates/rubber_block.json",
+          "src/main/resources/assets/ancient_asylum/models/block/rubber_block.json",
+          "src/main/resources/data/ancient_asylum/loot_table/blocks/rubber_block.json",
+          "src/main/java/net/mcreator/ancientasylum/block/RubberBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "RubberBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rubber_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ancient_asylum/recipe/rubber_block_recipe.json"
+        ]
+      },
+      "path": "~/All Recipes"
+    },
+    {
+      "name": "RubberFromRubberBlock",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rubber_from_rubber_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ancient_asylum/recipe/rubber_from_rubber_block.json"
+        ]
+      },
+      "path": "~/All Recipes"
+    },
+    {
+      "name": "SyntheticLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "synthetic_log",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/block/SyntheticLogBlock.java",
+          "src/main/resources/assets/ancient_asylum/models/item/synthetic_log.json",
+          "src/main/resources/assets/ancient_asylum/blockstates/synthetic_log.json",
+          "src/main/resources/assets/ancient_asylum/models/block/synthetic_log.json",
+          "src/main/resources/data/ancient_asylum/loot_table/blocks/synthetic_log.json"
+        ]
+      }
+    },
+    {
+      "name": "SyntheticPlank",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "synthetic_plank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/block/SyntheticPlankBlock.java",
+          "src/main/resources/assets/ancient_asylum/models/item/synthetic_plank.json",
+          "src/main/resources/data/ancient_asylum/loot_table/blocks/synthetic_plank.json",
+          "src/main/resources/assets/ancient_asylum/blockstates/synthetic_plank.json",
+          "src/main/resources/assets/ancient_asylum/models/block/synthetic_plank.json"
+        ]
+      }
+    },
+    {
+      "name": "SyntheticPlankFromLog",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "synthetic_plank_from_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ancient_asylum/recipe/synthetic_plank_from_log.json"
+        ]
+      },
+      "path": "~/All Recipes"
+    },
+    {
+      "name": "SyntheticPlankToRubber",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "synthetic_plank_to_rubber",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ancient_asylum/recipe/synthetic_plank_to_rubber.json"
+        ]
+      },
+      "path": "~/All Recipes"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:RubberBlock"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:SyntheticPlank",
+      "~CUSTOM:SyntheticLog"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item_group.ancient_asylum.ancient_asylum_items": "Ancient Asylum Items",
-      "item.ancient_asylum.rubber": "Rubber"
+      "block.ancient_asylum.synthetic_plank": "Synthetic Plank",
+      "item.ancient_asylum.rubber": "Rubber",
+      "block.ancient_asylum.rubber_block": "Rubber Block",
+      "block.ancient_asylum.synthetic_log": "Synthetic Log"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "All Recipes",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "ancient_asylum",

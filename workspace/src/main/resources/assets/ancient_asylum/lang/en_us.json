@@ -1,4 +1,7 @@
 {
   "item_group.ancient_asylum.ancient_asylum_items": "Ancient Asylum Items",
-  "item.ancient_asylum.rubber": "Rubber"
+  "block.ancient_asylum.synthetic_plank": "Synthetic Plank",
+  "item.ancient_asylum.rubber": "Rubber",
+  "block.ancient_asylum.rubber_block": "Rubber Block",
+  "block.ancient_asylum.synthetic_log": "Synthetic Log"
 }
