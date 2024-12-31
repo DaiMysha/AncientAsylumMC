@@ -122,6 +122,356 @@
         ]
       },
       "path": "~/All Recipes"
+    },
+    {
+      "name": "SyntheticTreeCapsuleRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "synthetic_tree_capsule_rightclicked_on_block",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/procedures/SyntheticTreeCapsuleRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TreeCapsules"
+    },
+    {
+      "name": "SyntheticTreeCapsule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "synthetic_tree_capsule",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/item/SyntheticTreeCapsuleItem.java",
+          "src/main/resources/assets/ancient_asylum/models/item/synthetic_tree_capsule.json"
+        ]
+      },
+      "path": "~/TreeCapsules"
+    },
+    {
+      "name": "OakTreeCapsule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tree_capsule",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/item/OakTreeCapsuleItem.java",
+          "src/main/resources/assets/ancient_asylum/models/item/oak_tree_capsule.json"
+        ]
+      },
+      "path": "~/TreeCapsules"
+    },
+    {
+      "name": "SpruceTreeCapsule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_tree_capsule",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/item/SpruceTreeCapsuleItem.java",
+          "src/main/resources/assets/ancient_asylum/models/item/spruce_tree_capsule.json"
+        ]
+      },
+      "path": "~/TreeCapsules"
+    },
+    {
+      "name": "BirchTreeCapsule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_tree_capsule",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/item/BirchTreeCapsuleItem.java",
+          "src/main/resources/assets/ancient_asylum/models/item/birch_tree_capsule.json"
+        ]
+      },
+      "path": "~/TreeCapsules"
+    },
+    {
+      "name": "JungleTreeCapsule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_tree_capsule",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ancient_asylum/models/item/jungle_tree_capsule.json",
+          "src/main/java/net/mcreator/ancientasylum/item/JungleTreeCapsuleItem.java"
+        ]
+      },
+      "path": "~/TreeCapsules"
+    },
+    {
+      "name": "DarkOakTreeCapsule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_tree_capsule",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/item/DarkOakTreeCapsuleItem.java",
+          "src/main/resources/assets/ancient_asylum/models/item/dark_oak_tree_capsule.json"
+        ]
+      },
+      "path": "~/TreeCapsules"
+    },
+    {
+      "name": "CherryTreeCapsule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherry_tree_capsule",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ancient_asylum/models/item/cherry_tree_capsule.json",
+          "src/main/java/net/mcreator/ancientasylum/item/CherryTreeCapsuleItem.java"
+        ]
+      },
+      "path": "~/TreeCapsules"
+    },
+    {
+      "name": "OakTreeCapsuleRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tree_capsule_rightclicked_on_block",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/procedures/OakTreeCapsuleRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TreeCapsules"
+    },
+    {
+      "name": "SpruceTreeCapsuleRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_tree_capsule_rightclicked_on_block",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/procedures/SpruceTreeCapsuleRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TreeCapsules"
+    },
+    {
+      "name": "BirchTreeCapsuleRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_tree_capsule_rightclicked_on_block",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/procedures/BirchTreeCapsuleRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TreeCapsules"
+    },
+    {
+      "name": "JungleTreeCapsuleRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_tree_capsule_rightclicked_on_block",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/procedures/JungleTreeCapsuleRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TreeCapsules"
+    },
+    {
+      "name": "DarkOakTreeCapsuleRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_tree_capsule_rightclicked_on_block",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/procedures/DarkOakTreeCapsuleRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TreeCapsules"
+    },
+    {
+      "name": "CherryTreeCapsuleRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherry_tree_capsule_rightclicked_on_block",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/ancientasylum/procedures/CherryTreeCapsuleRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TreeCapsules"
     }
   ],
   "variable_elements": [],
@@ -138,11 +488,25 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item_group.ancient_asylum.ancient_asylum_items": "Ancient Asylum Items",
+      "item.ancient_asylum.oak_tree_capsule": "Oak Tree Capsule",
+      "item.ancient_asylum.birch_tree_capsule": "Birch Tree Capsule",
+      "item.ancient_asylum.jungle_tree_capsule": "Jungle Tree Capsule",
+      "item.ancient_asylum.spruce_tree_capsule.description_0": "Use on a dirt/grass block to grow a Spruce Tree",
+      "item.ancient_asylum.cherry_tree_capsule": "Cherry Tree Capsule",
       "block.ancient_asylum.synthetic_plank": "Synthetic Plank",
+      "item.ancient_asylum.oak_tree_capsule.description_0": "Use on a dirt/grass block to grow an Oak Tree",
+      "item_group.ancient_asylum.ancient_asylum_items": "Ancient Asylum Items",
+      "item.ancient_asylum.birch_tree_capsule.description_0": "Use on a dirt/grass block to grow a Birch Tree",
+      "item.ancient_asylum.dark_oak_tree_capsule.description_0": "Use on a dirt/grass block to grow a Dark Oak Tree",
+      "item.ancient_asylum.synthetic_tree_capsule.description_0": "Use on a dirt/grass block to grow a CURRENT DEBUG FUNCTION: OAK TREE",
+      "item.ancient_asylum.jungle_tree_capsule.description_0": "Use on a dirt/grass block to grow a Jungle Tree",
+      "item.ancient_asylum.synthetic_tree_capsule": "Synthetic Tree Capsule",
+      "item.ancient_asylum.cherry_tree_capsule.description_0": "Use on a dirt/grass block to grow a Cherry Tree",
       "item.ancient_asylum.rubber": "Rubber",
+      "item.ancient_asylum.spruce_tree_capsule": "Spruce Tree Capsule",
       "block.ancient_asylum.rubber_block": "Rubber Block",
-      "block.ancient_asylum.synthetic_log": "Synthetic Log"
+      "block.ancient_asylum.synthetic_log": "Synthetic Log",
+      "item.ancient_asylum.dark_oak_tree_capsule": "Dark Oak Tree Capsule"
     }
   },
   "foldersRoot": {
@@ -150,6 +514,10 @@
     "children": [
       {
         "name": "All Recipes",
+        "children": []
+      },
+      {
+        "name": "TreeCapsules",
         "children": []
       }
     ]

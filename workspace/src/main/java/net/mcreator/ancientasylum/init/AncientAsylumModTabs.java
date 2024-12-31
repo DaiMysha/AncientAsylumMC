@@ -27,6 +27,13 @@ public class AncientAsylumModTabs {
 				tabData.accept(AncientAsylumModBlocks.RUBBER_BLOCK.get().asItem());
 				tabData.accept(AncientAsylumModBlocks.SYNTHETIC_LOG.get().asItem());
 				tabData.accept(AncientAsylumModBlocks.SYNTHETIC_PLANK.get().asItem());
+				tabData.accept(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get());
+				tabData.accept(AncientAsylumModItems.OAK_TREE_CAPSULE.get());
+				tabData.accept(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get());
+				tabData.accept(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get());
+				tabData.accept(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get());
+				tabData.accept(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get());
+				tabData.accept(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get());
 			}).build());
 
 	@SubscribeEvent
@@ -37,6 +44,14 @@ public class AncientAsylumModTabs {
 			tabData.accept(AncientAsylumModBlocks.RUBBER_BLOCK.get().asItem());
 			tabData.accept(AncientAsylumModBlocks.SYNTHETIC_LOG.get().asItem());
 			tabData.accept(AncientAsylumModBlocks.SYNTHETIC_PLANK.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get());
+			tabData.accept(AncientAsylumModItems.OAK_TREE_CAPSULE.get());
+			tabData.accept(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get());
+			tabData.accept(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get());
+			tabData.accept(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get());
+			tabData.accept(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get());
+			tabData.accept(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get());
 		}
 	}
 }
