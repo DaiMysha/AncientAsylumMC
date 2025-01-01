@@ -1,5 +1,6 @@
 package net.mcreator.ancientasylum.procedures;
 
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
 import net.neoforged.neoforge.items.IItemHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
@@ -56,6 +57,7 @@ public class GrowthChamberRecipeCalculatorProcedure {
 			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == AncientAsylumModItems.SYNTHETIC_SAPLING.get()) {
 				if (localRecipe != 0) {
 					localRecipe = 0;
+					localTimer = 0;
 				}
 			} else if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -69,6 +71,7 @@ public class GrowthChamberRecipeCalculatorProcedure {
 			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Blocks.OAK_SAPLING.asItem()) {
 				if (localRecipe != 1) {
 					localRecipe = 1;
+					localTimer = 0;
 				}
 			} else if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -82,6 +85,7 @@ public class GrowthChamberRecipeCalculatorProcedure {
 			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Blocks.SPRUCE_SAPLING.asItem()) {
 				if (localRecipe != 2) {
 					localRecipe = 2;
+					localTimer = 0;
 				}
 			} else if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -95,6 +99,7 @@ public class GrowthChamberRecipeCalculatorProcedure {
 			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Blocks.BIRCH_SAPLING.asItem()) {
 				if (localRecipe != 3) {
 					localRecipe = 3;
+					localTimer = 0;
 				}
 			} else if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -108,6 +113,7 @@ public class GrowthChamberRecipeCalculatorProcedure {
 			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Blocks.JUNGLE_SAPLING.asItem()) {
 				if (localRecipe != 4) {
 					localRecipe = 4;
+					localTimer = 0;
 				}
 			} else if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -121,6 +127,7 @@ public class GrowthChamberRecipeCalculatorProcedure {
 			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Blocks.ACACIA_SAPLING.asItem()) {
 				if (localRecipe != 5) {
 					localRecipe = 5;
+					localTimer = 0;
 				}
 			} else if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -134,6 +141,7 @@ public class GrowthChamberRecipeCalculatorProcedure {
 			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Blocks.DARK_OAK_SAPLING.asItem()) {
 				if (localRecipe != 6) {
 					localRecipe = 6;
+					localTimer = 0;
 				}
 			} else if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -147,6 +155,7 @@ public class GrowthChamberRecipeCalculatorProcedure {
 			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Blocks.CHERRY_SAPLING.asItem()) {
 				if (localRecipe != 7) {
 					localRecipe = 7;
+					localTimer = 0;
 				}
 			} else {
 				if (localTimer != 0) {
@@ -165,9 +174,3913 @@ public class GrowthChamberRecipeCalculatorProcedure {
 			}
 		}
 		if (localRecipe == 0 && localTimer >= 200) {
-			world.setBlock(BlockPos.containing(x, y, z), Blocks.CRACKED_DEEPSLATE_TILES.defaultBlockState(), 3);
+			if ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get()) {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				} else {
+					if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(2, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(3, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(4, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(5, _setstack);
+						}
+						localTimer = 0;
+					}
+				}
+			} else {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SYNTHETIC_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				}
+			}
+		} else if (localRecipe == 1 && localTimer >= 200) {
+			if ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.OAK_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.OAK_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.OAK_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.OAK_TREE_CAPSULE.get()) {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.OAK_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.OAK_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.OAK_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.OAK_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				} else {
+					if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.OAK_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(2, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.OAK_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(3, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.OAK_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(4, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.OAK_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(5, _setstack);
+						}
+						localTimer = 0;
+					}
+				}
+			} else {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				}
+			}
+		} else if (localRecipe == 2 && localTimer >= 200) {
+			if ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get()) {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				} else {
+					if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(2, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(3, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(4, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(5, _setstack);
+						}
+						localTimer = 0;
+					}
+				}
+			} else {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.SPRUCE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				}
+			}
+		} else if (localRecipe == 3 && localTimer >= 200) {
+			if ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.BIRCH_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.BIRCH_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.BIRCH_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.BIRCH_TREE_CAPSULE.get()) {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.BIRCH_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.BIRCH_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.BIRCH_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.BIRCH_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				} else {
+					if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(2, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(3, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(4, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(5, _setstack);
+						}
+						localTimer = 0;
+					}
+				}
+			} else {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.BIRCH_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				}
+			}
+		} else if (localRecipe == 4 && localTimer >= 200) {
+			if ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get()) {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				} else {
+					if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(2, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(3, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(4, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(5, _setstack);
+						}
+						localTimer = 0;
+					}
+				}
+			} else {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				}
+			}
+		} else if (localRecipe == 5 && localTimer >= 200) {
+			if ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.ACACIA_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.ACACIA_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.ACACIA_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.ACACIA_TREE_CAPSULE.get()) {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.ACACIA_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.ACACIA_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.ACACIA_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.ACACIA_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.ACACIA_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.ACACIA_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.ACACIA_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.ACACIA_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				} else {
+					if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.ACACIA_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(2, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.ACACIA_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(3, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.ACACIA_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(4, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.ACACIA_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(5, _setstack);
+						}
+						localTimer = 0;
+					}
+				}
+			} else {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.ACACIA_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.ACACIA_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.ACACIA_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.ACACIA_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				}
+			}
+		} else if (localRecipe == 6 && localTimer >= 200) {
+			if ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get()) {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				} else {
+					if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(2, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(3, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(4, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(5, _setstack);
+						}
+						localTimer = 0;
+					}
+				}
+			} else {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				}
+			}
+		} else if (localRecipe == 7 && localTimer >= 200) {
+			if ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.CHERRY_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.CHERRY_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.CHERRY_TREE_CAPSULE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.CHERRY_TREE_CAPSULE.get()) {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == AncientAsylumModItems.CHERRY_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == AncientAsylumModItems.CHERRY_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == AncientAsylumModItems.CHERRY_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == AncientAsylumModItems.CHERRY_TREE_CAPSULE.get() && (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() < (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getMaxStackSize()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get()).copy();
+						_setstack.setCount((int) ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).copy();
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getCount() + 1));
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				} else {
+					if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(2, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(3, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(4, _setstack);
+						}
+						localTimer = 0;
+					} else if ((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							if (world instanceof ILevelExtension _ext) {
+								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+								if (_itemHandler != null)
+									return _itemHandler.getStackInSlot(slotid).copy();
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get()).copy();
+							_setstack.setCount(1);
+							_itemHandlerModifiable.setStackInSlot(5, _setstack);
+						}
+						localTimer = 0;
+					}
+				}
+			} else {
+				if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(4, _setstack);
+					}
+					localTimer = 0;
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot(5, _setstack);
+					}
+					localTimer = 0;
+				}
+			}
 		}
-		localTimer = localTimer + 1;
+		if (localRecipe < 200) {
+			localTimer = localTimer + 1;
+		}
 		if (!world.isClientSide()) {
 			BlockPos _bp = BlockPos.containing(x, y, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);

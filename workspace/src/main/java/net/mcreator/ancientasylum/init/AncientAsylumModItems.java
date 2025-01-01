@@ -22,6 +22,7 @@ import net.mcreator.ancientasylum.item.EmptyTreeCapsuleItem;
 import net.mcreator.ancientasylum.item.DarkOakTreeCapsuleItem;
 import net.mcreator.ancientasylum.item.CherryTreeCapsuleItem;
 import net.mcreator.ancientasylum.item.BirchTreeCapsuleItem;
+import net.mcreator.ancientasylum.item.AcaciaTreeCapsuleItem;
 import net.mcreator.ancientasylum.AncientAsylumMod;
 
 public class AncientAsylumModItems {
@@ -40,6 +41,7 @@ public class AncientAsylumModItems {
 	public static final DeferredItem<Item> EMPTY_TREE_CAPSULE = REGISTRY.register("empty_tree_capsule", EmptyTreeCapsuleItem::new);
 	public static final DeferredItem<Item> SYNTHETIC_SAPLING = REGISTRY.register("synthetic_sapling", SyntheticSaplingItem::new);
 	public static final DeferredItem<Item> GROWTH_CHAMBER = block(AncientAsylumModBlocks.GROWTH_CHAMBER);
+	public static final DeferredItem<Item> ACACIA_TREE_CAPSULE = REGISTRY.register("acacia_tree_capsule", AcaciaTreeCapsuleItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
