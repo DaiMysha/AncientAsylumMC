@@ -18,7 +18,7 @@ import java.util.List;
 
 public class DarkOakTreeCapsuleItem extends Item {
 	public DarkOakTreeCapsuleItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON));
 	}
 
 	@Override

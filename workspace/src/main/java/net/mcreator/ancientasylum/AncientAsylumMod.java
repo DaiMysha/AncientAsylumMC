@@ -19,8 +19,10 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.ancientasylum.init.AncientAsylumModTabs;
+import net.mcreator.ancientasylum.init.AncientAsylumModMenus;
 import net.mcreator.ancientasylum.init.AncientAsylumModItems;
 import net.mcreator.ancientasylum.init.AncientAsylumModBlocks;
+import net.mcreator.ancientasylum.init.AncientAsylumModBlockEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -41,10 +43,12 @@ public class AncientAsylumMod {
 		modEventBus.addListener(this::registerNetworking);
 
 		AncientAsylumModBlocks.REGISTRY.register(modEventBus);
-
+		AncientAsylumModBlockEntities.REGISTRY.register(modEventBus);
 		AncientAsylumModItems.REGISTRY.register(modEventBus);
 
 		AncientAsylumModTabs.REGISTRY.register(modEventBus);
+
+		AncientAsylumModMenus.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

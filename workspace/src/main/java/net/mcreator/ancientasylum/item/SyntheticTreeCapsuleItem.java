@@ -18,7 +18,7 @@ import java.util.List;
 
 public class SyntheticTreeCapsuleItem extends Item {
 	public SyntheticTreeCapsuleItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON));
 	}
 
 	@Override

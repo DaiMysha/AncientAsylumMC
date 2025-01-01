@@ -1,4 +1,5 @@
 {
+  "block.ancient_asylum.growth_chamber": "Growth Chamber",
   "item.ancient_asylum.oak_tree_capsule": "Oak Tree Capsule",
   "item.ancient_asylum.birch_tree_capsule": "Birch Tree Capsule",
   "item.ancient_asylum.jungle_tree_capsule": "Jungle Tree Capsule",
@@ -9,12 +10,14 @@
   "item_group.ancient_asylum.ancient_asylum_items": "Ancient Asylum Items",
   "item.ancient_asylum.birch_tree_capsule.description_0": "Use on a dirt/grass block to grow a Birch Tree",
   "item.ancient_asylum.dark_oak_tree_capsule.description_0": "Use on a dirt/grass block to grow a Dark Oak Tree",
+  "item.ancient_asylum.synthetic_sapling": "Synthetic Sapling",
   "item.ancient_asylum.synthetic_tree_capsule.description_0": "Use on a dirt/grass block to grow a CURRENT DEBUG FUNCTION: OAK TREE",
   "item.ancient_asylum.jungle_tree_capsule.description_0": "Use on a dirt/grass block to grow a Jungle Tree",
   "item.ancient_asylum.synthetic_tree_capsule": "Synthetic Tree Capsule",
   "item.ancient_asylum.cherry_tree_capsule.description_0": "Use on a dirt/grass block to grow a Cherry Tree",
   "item.ancient_asylum.rubber": "Rubber",
   "item.ancient_asylum.spruce_tree_capsule": "Spruce Tree Capsule",
+  "item.ancient_asylum.empty_tree_capsule": "Empty Tree Capsule",
   "block.ancient_asylum.rubber_block": "Rubber Block",
   "block.ancient_asylum.synthetic_log": "Synthetic Log",
   "item.ancient_asylum.dark_oak_tree_capsule": "Dark Oak Tree Capsule"

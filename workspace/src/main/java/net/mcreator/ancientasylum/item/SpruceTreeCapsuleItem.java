@@ -18,7 +18,7 @@ import java.util.List;
 
 public class SpruceTreeCapsuleItem extends Item {
 	public SpruceTreeCapsuleItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON));
 	}
 
 	@Override

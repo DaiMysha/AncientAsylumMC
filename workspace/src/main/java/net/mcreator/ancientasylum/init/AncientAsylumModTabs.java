@@ -34,12 +34,17 @@ public class AncientAsylumModTabs {
 				tabData.accept(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get());
 				tabData.accept(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get());
 				tabData.accept(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get());
+				tabData.accept(AncientAsylumModItems.EMPTY_TREE_CAPSULE.get());
+				tabData.accept(AncientAsylumModItems.SYNTHETIC_SAPLING.get());
+				tabData.accept(AncientAsylumModBlocks.GROWTH_CHAMBER.get().asItem());
 			}).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(AncientAsylumModItems.RUBBER.get());
+			tabData.accept(AncientAsylumModItems.EMPTY_TREE_CAPSULE.get());
+			tabData.accept(AncientAsylumModItems.SYNTHETIC_SAPLING.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(AncientAsylumModBlocks.RUBBER_BLOCK.get().asItem());
 			tabData.accept(AncientAsylumModBlocks.SYNTHETIC_LOG.get().asItem());
@@ -52,6 +57,8 @@ public class AncientAsylumModTabs {
 			tabData.accept(AncientAsylumModItems.JUNGLE_TREE_CAPSULE.get());
 			tabData.accept(AncientAsylumModItems.DARK_OAK_TREE_CAPSULE.get());
 			tabData.accept(AncientAsylumModItems.CHERRY_TREE_CAPSULE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+			tabData.accept(AncientAsylumModBlocks.GROWTH_CHAMBER.get().asItem());
 		}
 	}
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "ancient_asylum:growth_chamber",
     "ancient_asylum:rubber_block"
   ]
 }
